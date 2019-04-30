@@ -18,7 +18,7 @@ Faculty of Informatics, Subject: PB138 Modern markup languages. Provides modern 
      - processing mode.
   
  ### Authors
-*Tomáš Bouma*, *Braňo Smolíček*, *Marek Pavel Viskup*, *Jakub Bateľ*
+*Tomáš Bouma*, *Branislav Smolíček*, *Marek Pavel Viskup*, *Jakub Bateľ*
  
 
 

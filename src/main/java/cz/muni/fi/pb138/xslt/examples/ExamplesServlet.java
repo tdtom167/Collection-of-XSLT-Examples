@@ -14,7 +14,21 @@ public class ExamplesServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getPathInfo();
         System.out.println(action);
-        request.getRequestDispatcher("/index.jsp").forward(request, response);
+        final String JSP;
+        switch (action) {
+            case "/priority-of-templates":
+                JSP = "/priority-of-templates.jsp";
+                break;
+            case "/xsl-for-each":
+                JSP = "/xsl-for-each.jsp";
+                break;
+            case "/xsl-number":
+                JSP = "/xsl-number.jsp";
+                break;
+            default:
+                JSP = "/index.jsp";
+        }
+        request.getRequestDispatcher(JSP).forward(request, response);
     }
 
     @Override

@@ -13,27 +13,41 @@
         tr.light {
             background-color: lightgray;
         }
+
         table {
             width: 70%;
             border: solid 1px black;
             border-collapse: collapse;
         }
+
         td {
             padding: 10px;
         }
+
         th {
             padding: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .highlighted {
+            background-color: #4f4f4f;
         }
     </style>
 
     <h1>XSLT &lt;xsl:value-of&gt; Element</h1>
+    <hr>
     <h2>Definition and usage</h2>
     <p>The &lt;xsl:value-of&gt; element extracts the value of a selected node.</p>
+    <hr>
     <h2>Syntax</h2>
     <pre class="prettyprint linenums">
 &lt;xsl:value-of select=&quot;expression&quot; disable-output-escaping=&quot;yes|no&quot;/&gt;</pre>
 
-    <h2>Syntax</h2>
+    <h2>Usage</h2>
     <table>
         <tr>
             <th style="width: 15%; text-align: left;">
@@ -73,6 +87,7 @@
             </td>
         </tr>
     </table>
+    <hr>
 
     <h2>The &lt;xsl:value-of&gt; Element</h2>
     <p>The &lt;xsl:value-of&gt; element can be used to extract the value of an XML element and add it to the output stream of the transformation:</p>

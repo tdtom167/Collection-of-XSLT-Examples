@@ -9,9 +9,21 @@
 </head>
 
 <body>
-    <h1>XSLT &lt;xsl:for-each&gt; Element</h1>
+    <style>
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+        }
 
+        .highlighted {
+            background-color: #4f4f4f;
+        }
+    </style>
+
+    <h1>XSLT &lt;xsl:for-each&gt; Element</h1>
+    <hr>
     <p>The &lt;xsl:for-each&gt; element allows you to do looping in XSLT.</p>
+    <hr>
     <h2>The &lt;xsl:for-each&gt; Element</h2>
     <p>The XSL &lt;xsl:for-each&gt; element can be used to select every XML element of a specified node-set:</p>
 

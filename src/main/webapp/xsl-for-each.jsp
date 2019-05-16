@@ -1,11 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+
 <head>
     <title>XSLT &lt;xsl:for-each&gt; Element</title>
     <!-- Syntax Highlight -->
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/desert.css" type="text/css">
 </head>
+
 <body>
     <h1>XSLT &lt;xsl:for-each&gt; Element</h1>
 
@@ -44,4 +46,5 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
     <p><b>Note:</b> The value of the <b>select</b> attribute is an XPath expression. An XPath expression works
         like navigating a file system; where a forward slash (/) selects subdirectories.</p>
 </body>
+
 </html>

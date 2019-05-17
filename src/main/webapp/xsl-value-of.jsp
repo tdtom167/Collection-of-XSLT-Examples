@@ -10,7 +10,7 @@
 
 <p>
     <style>
-        tr.light {
+        .light {
             background-color: lightgray;
         }
 
@@ -41,12 +41,13 @@
     <h1>XSLT &lt;xsl:value-of&gt; Element</h1>
     <hr>
     <h2>Definition and usage</h2>
-    <p>The &lt;xsl:value-of&gt; element extracts the value of a selected node.</p>
+    The <code class="light">&lt;xsl:value-of&gt;</code> element extracts the value of a selected node.
     <hr>
     <h2>Syntax</h2>
     <pre class="prettyprint linenums">
 &lt;xsl:value-of select=&quot;expression&quot; disable-output-escaping=&quot;yes|no&quot;/&gt;</pre>
 
+    <hr>
     <h2>Usage</h2>
     <table>
         <tr>
@@ -90,42 +91,59 @@
     <hr>
 
     <h2>The &lt;xsl:value-of&gt; Element</h2>
-    <p>The &lt;xsl:value-of&gt; element can be used to extract the value of an XML element and add it to the output stream of the transformation:</p>
-    <p><b>Example</b></p>
+    The <code class="light">&lt;xsl:value-of&gt;</code> element can be used to extract the value of an XML element and add it to the output stream of the transformation.
 
+    <hr>
+    <h2>Example</h2>
+    The following XSLT file creates a <code class="light">&lt;p&gt;</code> element from a <code class="light">&lt;person&gt;</code>
+    element with <code class="light">&lt;given-name&gt;</code> and <code class="light">&lt;family-name&gt;</code> child elements.
+    The <code class="light">&lt;p&gt;</code> element will contain the string value of the first <code class="light">&lt;given-name&gt;</code>
+    child element of the current node, followed by a space and the string value of the first <code class="light">&lt;family-name&gt;</code>
+    child element of the current node.
+
+    <h3>XML File (family.xml)</h3>
     <pre class="prettyprint linenums">
-    &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-    &lt;xsl:stylesheet version="1.0"
-                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+    &lt;?xml version="1.0"?&gt;
+    &lt;?xml-stylesheet type="text/xsl" href="family.xsl"?&gt;
+    &lt;family&gt;
+        &lt;person&gt;
+            &lt;first-name age="10"&gt;Fred&lt;/first-name&gt;
+            &lt;family-name&gt;Smith&lt;/family-name&gt;
+        &lt;/person&gt;
+        &lt;person&gt;
+            &lt;first-name age="13"&gt;Jill&lt;/first-name&gt;
+            &lt;family-name&gt;Jones&lt;/family-name&gt;
+        &lt;/person&gt;
+    &lt;/family&gt;</pre>
+    <br/>
 
-        &lt;xsl:template match="/"&gt;
-            &lt;html&gt;
-            &lt;body&gt;
-            &lt;h2&gt;My CD Collection&lt;/h2&gt;
-            &lt;table border="1"&gt;
-                &lt;tr bgcolor="#9acd32"&gt;
-                    &lt;th&gt;Title&lt;/th&gt;
-                    &lt;th&gt;Artist&lt;/th&gt;
-                &lt;/tr>
-                &lt;tr>
-                    &lt;td&gt;&lt;xsl:value-of select="catalog/cd/title"/&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;xsl:value-of select="catalog/cd/artist"/&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/table&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
-        &lt;/xsl:template&gt;
+    <h3>XSLT File (family.xsl)</h3>
+    <pre class="prettyprint linenums">
+    &lt;?xml version="1.0"?&gt;
+    &lt;xsl:stylesheet version="1.0"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+    &lt;xsl:template match="person"&gt;
+        &lt;p&gt;
+            &lt;xsl:value-of select="first-name"/&gt;
+            &lt;xsl:text&gt; &lt;/xsl:text&gt;
+            &lt;xsl:value-of select="family-name"/&gt;
+        &lt;/p&gt;
+    &lt;/xsl:template&gt;
 
     &lt;/xsl:stylesheet&gt;</pre>
-    <p>
-        <b>Note:</b> The <b>select</b> attribute, in the example above, contains an XPath expression. An XPath expression works
-        like navigating a file system; a forward slash (/) selects subdirectories.
-    </p>
-    <p>
-        The result from the example above was a little disappointing; only one line of data was copied from the XML
-        document to the output. In the next chapter you will learn how to use the <b>&lt;xsl:for-each&gt;</b> element to loop through
-        the XML elements, and display all of the records.
-    </p>
+    <br/>
+
+    <h3>Output</h3>
+    Fred Smith<br/>
+    Jill Jones<br/>
+    <br/>
+    <b>Processor output:</b>
+    <pre class="prettyprint linenums">
+    &lt;?xml version="1.0" encoding="UTF-16"?&gt;
+        &lt;p&gt;Fred Smith&lt;/p&gt;
+        &lt;p&gt;Jill Jones&lt;/p&gt;</pre>
+    </br>
 </body>
 
 </html>

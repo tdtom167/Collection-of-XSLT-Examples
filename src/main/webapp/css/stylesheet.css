@@ -30,3 +30,6 @@ code {
 .light {
     background-color: lightgray;
 }
+body {
+    font-family: 'Kodchasan', sans-serif;
+}

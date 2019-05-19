@@ -25,6 +25,12 @@
     <li>
         <a href="xsl-number.jsp">xsl:number</a><br/>
     </li>
+    <li>
+        <a href="xsl-choose.jsp">xsl:choose</a><br/>
+    </li>
+    <li>
+        <a href="xsl-copy.jsp">xsl:copy-of</a><br/>
+    </li>
 </ul>
 </body>
 </html>

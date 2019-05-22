@@ -21,7 +21,7 @@
         <a href="priority-of-templates.jsp">Priority of templates</a>
         <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
         <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
-        <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>
+        <a href="xsl-value-of.jsp" style="background-color: #ddd; color: black;">XSLT &lt;value-of&gt;</a>
         <a href="xsl-number.jsp">XSLT &lt;number&gt;</a>
         <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
         <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>

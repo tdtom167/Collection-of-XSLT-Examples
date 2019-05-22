@@ -6,7 +6,7 @@ hr {
 
 /* Highlighting code background */
 code {
-    background-color: lightgray;
+    background-color: #444;
 }
 
 /* Floating box used for displaying file content on half of the screen */
@@ -28,13 +28,23 @@ code {
 }
 
 .light {
-    background-color: lightgray;
+    background-color: #444;
 }
 
 /* Style the body */
 body {
     font-family: 'Kodchasan', sans-serif;
     margin: 0px;
+    background-color: #222;
+    color: #EEE;
+}
+
+h1, h2, h3 {
+    color: rgb(57, 182, 231);
+}
+
+strong {
+    color: rgb(99, 202, 243);
 }
 
 /* Style the navbar */

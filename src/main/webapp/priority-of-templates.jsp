@@ -10,19 +10,6 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/stylesheet.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
             
-        <style>
-            h3 {
-                margin: 0;
-            }
-            .fileBlock {
-                padding: 0.5%;
-            }
-            .fileBlockFloat {
-                padding: 0.5%;
-                float: left; width: 49%;
-            }
-        </style>
-            
     </head>
     <body>
         <div id="navbar">
@@ -104,6 +91,11 @@ Second template matching name John with income over 80000
 High priority template matching name Alice
 			</pre>
             </div>
+            <p>
+                First person <strong>John Doe</strong> is matched by template matching all persons with name <em>John</em>. It is only template that matches this person because he doesn't have income over <em>78000</em>.<br/>
+                Second person <strong>John Snow</strong> have income <em>80000</em> which means he can be matched with 3 templates. Each of these have <strong>default priority</strong> attribute so they are equal. This means the last one in the file is used. <br/>
+                The last person <strong>Alice Carlson</strong> fits two templates. Both the same, matching person with name <em>Alice</em>, except the first one have priority set to <em>1</em> which is more than <em>0.5</em> and that is why the first one is used.
+            </p>
         </div>
     </body>
 </html>

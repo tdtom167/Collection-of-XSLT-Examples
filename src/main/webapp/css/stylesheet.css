@@ -81,3 +81,21 @@ strong {
 .content {
     padding: 50px 16px 16px 16px;
 }
+
+.browserDisplay {
+    color: #222;
+    background-color: #EEE;
+    padding: 0.5% 2%;
+}
+
+.browserDisplay h1 {
+    color: #222;
+}
+
+.browserDisplay h2 {
+    color: #222;
+}
+
+.browserDisplay h3 {
+    color: #222;
+}

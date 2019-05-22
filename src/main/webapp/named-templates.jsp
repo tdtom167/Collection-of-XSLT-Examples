@@ -141,28 +141,30 @@
             <div class="floatingHalfBox">
                 <h3>Preview</h3>
                 <p>This is how result html looks like displayed by browser.</p>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Surname</th>
-                        <th>Income</th>
-                    </tr>
-                    <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>75000</td>
-                    </tr>
-                    <tr>
-                        <td>John</td>
-                        <td>Snow</td>
-                        <td>80000</td>
-                    </tr>
-                    <tr>
-                        <td>Alice</td>
-                        <td>Carlson</td>
-                        <td>76000</td>
-                    </tr>
-                </table>
+                <div class="browserDisplay">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Income</th>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>75000</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Snow</td>
+                            <td>80000</td>
+                        </tr>
+                        <tr>
+                            <td>Alice</td>
+                            <td>Carlson</td>
+                            <td>76000</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </body>

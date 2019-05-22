@@ -11,31 +11,43 @@
 </head>
 
 <body>
-    <h1>XSLT &lt;xsl:for-each&gt; Element</h1>
-    <hr>
-    The <code>&lt;xsl:for-each&gt;</code> element allows you to do looping in XSLT.
-    <hr>
-    <h2>The &lt;xsl:for-each&gt; Element</h2>
-    The XSL <code>&lt;xsl:for-each&gt;</code> element can be used to select every XML element of a specified node-set.
-
-    <h2>Remarks</h2>
-    The <code>&lt;xsl:for-each&gt;</code> element establishes the context for iteration. The XSLT transformation
-    instructions within this loop are to be applied to the selected nodes. Each source element selected by
-    <code>&lt;xsl:for-each&gt;</code> becomes a new context against which any pattern matching within the
-    <code>&lt;xsl:for-each&gt;</code> occurs.
-
-    <hr>
-    <h2>Example</h2>
-    <div style="max-width: 60%;">
-    The XSLT file in this example defines the structure of an output document. The output is a top-level HTML
-    element containing <code>&lt;body&gt;</code> and <code>&lt;table&gt;</code> elements. The table contains repeated
-    rows for each customer. The XSLT file also uses templates to create <code>&lt;td&gt;</code> elements for the name,
-    address, and phone source elements.
+    <div id="navbar">
+        <a href="/xslt_examples" class="active">Home</a>
+        <a href="priority-of-templates.jsp">Priority of templates</a>
+        <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
+        <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
+        <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>
+        <a href="xsl-number.jsp">XSLT &lt;number&gt;</a>
+        <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
+        <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
     </div>
 
-    <div class="floatingHalfBox">
-        <h3>XML File (customers.xml)</h3>
-        <pre class="prettyprint linenums">
+    <div class="floatingBox">
+        <h1>XSLT &lt;xsl:for-each&gt; Element</h1>
+        <hr>
+        The <code>&lt;xsl:for-each&gt;</code> element allows you to do looping in XSLT.
+        <hr>
+        <h2>The &lt;xsl:for-each&gt; Element</h2>
+        The XSL <code>&lt;xsl:for-each&gt;</code> element can be used to select every XML element of a specified node-set.
+
+        <h2>Remarks</h2>
+        The <code>&lt;xsl:for-each&gt;</code> element establishes the context for iteration. The XSLT transformation
+        instructions within this loop are to be applied to the selected nodes. Each source element selected by
+        <code>&lt;xsl:for-each&gt;</code> becomes a new context against which any pattern matching within the
+        <code>&lt;xsl:for-each&gt;</code> occurs.
+
+        <hr>
+        <h2>Example</h2>
+        <div style="max-width: 60%;">
+            The XSLT file in this example defines the structure of an output document. The output is a top-level HTML
+            element containing <code>&lt;body&gt;</code> and <code>&lt;table&gt;</code> elements. The table contains repeated
+            rows for each customer. The XSLT file also uses templates to create <code>&lt;td&gt;</code> elements for the name,
+            address, and phone source elements.
+        </div>
+
+        <div class="floatingHalfBox">
+            <h3>XML File (customers.xml)</h3>
+            <pre class="prettyprint linenums">
     &lt;?xml version="1.0"?&gt;
     &lt;?xml-stylesheet type="text/xsl" href="foreach.xsl" ?&gt;
     &lt;customers>&lt;
@@ -58,10 +70,10 @@
             &lt;phone>(206) 423-4537&lt;/phone&gt;
         &lt;/customer&gt;
     &lt;/customers&gt;</pre>
-    </div>
-    <div class="floatingHalfBox">
-        <h3>XSLT File (foreach.xsl)</h3>
-        <pre class="prettyprint linenums">
+        </div>
+        <div class="floatingHalfBox">
+            <h3>XSLT File (foreach.xsl)</h3>
+            <pre class="prettyprint linenums">
     &lt;?xml version="1.0"?&gt;
     &lt;xsl:stylesheet version="1.0"
             xmlns:xsl="http://www.w3.org/1999/XSL/Transform" &gt;
@@ -84,32 +96,32 @@
     &lt;/xsl:template&gt;
 
     &lt;/xsl:stylesheet&gt;</pre>
-    </div>
+        </div>
 
 
-    <div class="floatingBox">
-        <br/>
-        <h3>Output</h3>
-        <table>
-            <tr>
-                <td>Albert Aikens</td>
-                <td>368 Elm St.</td>
-                <td>(206) 423-4537</td>
-            </tr>
-            <tr>
-                <td>John Smith</td>
-                <td>123 Oak St.</td>
-                <td>(206) 123-4567</td>
-            </tr>
-            <tr>
-                <td>Zack Zwyker</td>
-                <td>368 Elm St.</td>
-                <td>(206) 423-4537</td>
-            </tr>
-        </table>
-        <br/>
-        <b>Processor output:</b>
-        <pre class="prettyprint linenums">
+        <div class="floatingBox">
+            <br/>
+            <h3>Output</h3>
+            <table>
+                <tr>
+                    <td>Albert Aikens</td>
+                    <td>368 Elm St.</td>
+                    <td>(206) 423-4537</td>
+                </tr>
+                <tr>
+                    <td>John Smith</td>
+                    <td>123 Oak St.</td>
+                    <td>(206) 123-4567</td>
+                </tr>
+                <tr>
+                    <td>Zack Zwyker</td>
+                    <td>368 Elm St.</td>
+                    <td>(206) 423-4537</td>
+                </tr>
+            </table>
+            <br/>
+            <b>Processor output:</b>
+            <pre class="prettyprint linenums">
     &lt;html&gt;
         &lt;body&gt;
             &lt;table&gt;
@@ -131,6 +143,7 @@
             &lt;/table&gt;
         &lt;/body&gt;
     &lt;/html&gt;</pre>
+        </div>
     </div>
 </body>
 

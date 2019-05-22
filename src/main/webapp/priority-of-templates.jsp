@@ -7,6 +7,8 @@
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/desert.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/stylesheet.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
             
         <style>
             h3 {
@@ -23,12 +25,24 @@
             
     </head>
     <body>
-        <h1>Priority of templates</h1>
-        <p>Priority of template can be specified by <strong>priority</strong> attribute. The default priority is <em>0.5</em> .
-            Template withhigher value in <strong>priority</strong> attribute is used. If two templates have the same priority then the last one in the file is used.</p>
-		<div class="fileBlockFloat">
-			<h3>XML file</h3>
-			<pre class="prettyprint linenums">
+        <div id="navbar">
+            <a href="/xslt_examples" class="active">Home</a>
+            <a href="priority-of-templates.jsp">Priority of templates</a>
+            <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
+            <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
+            <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>
+            <a href="xsl-number.jsp">XSLT &lt;number&gt;</a>
+            <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
+            <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
+        </div>
+
+        <div class="floatingBox">
+            <h1>Priority of templates</h1>
+            <p>Priority of template can be specified by <strong>priority</strong> attribute. The default priority is <em>0.5</em> .
+                Template withhigher value in <strong>priority</strong> attribute is used. If two templates have the same priority then the last one in the file is used.</p>
+            <div class="fileBlockFloat">
+                <h3>XML file</h3>
+                <pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;persons&gt;
     &lt;person&gt;
@@ -50,11 +64,11 @@
     &lt;/person&gt;
 &lt;/persons&gt;
 			</pre>
-		</div>
-		
-		<div class="fileBlockFloat">
-			<h3>XSLT file</h3>
-        	<pre class="prettyprint linenums">
+            </div>
+
+            <div class="fileBlockFloat">
+                <h3>XSLT file</h3>
+                <pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
 
@@ -80,15 +94,16 @@
 
 &lt;/xsl:stylesheet&gt;
 			</pre>
-		</div>
-		
-		<div class="fileBlock">
-			<h3>Output</h3>
-			<pre class="prettyprint linenums">
+            </div>
+
+            <div class="fileBlock">
+                <h3>Output</h3>
+                <pre class="prettyprint linenums">
 Template matching name John
 Second template matching name John with income over 80000
 High priority template matching name Alice
 			</pre>
-		</div>
+            </div>
+        </div>
     </body>
 </html>

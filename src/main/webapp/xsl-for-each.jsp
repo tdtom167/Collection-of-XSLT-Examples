@@ -22,7 +22,7 @@
         <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
     </div>
 
-    <div class="floatingBox">
+    <div class="content">
         <h1>XSLT &lt;xsl:for-each&gt; Element</h1>
         <hr>
         The <code>&lt;xsl:for-each&gt;</code> element allows you to do looping in XSLT.

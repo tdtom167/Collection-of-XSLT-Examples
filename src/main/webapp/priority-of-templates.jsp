@@ -36,7 +36,7 @@
             <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
         </div>
 
-        <div class="floatingBox">
+        <div class="content">
             <h1>Priority of templates</h1>
             <p>Priority of template can be specified by <strong>priority</strong> attribute. The default priority is <em>0.5</em> .
                 Template withhigher value in <strong>priority</strong> attribute is used. If two templates have the same priority then the last one in the file is used.</p>

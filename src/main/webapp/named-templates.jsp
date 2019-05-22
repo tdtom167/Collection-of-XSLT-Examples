@@ -8,27 +8,40 @@
         <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Named templates</h1>
-        <p>
-            Templates can have custom names. The name of the template is specified by <strong>name</strong> attribute.
-            After you name the template you can call it using <strong>&lt;xsl:call-template <span style="color: rgb(135, 202, 99);">name</span>
+        <div id="navbar">
+            <a href="/xslt_examples" class="active">Home</a>
+            <a href="priority-of-templates.jsp">Priority of templates</a>
+            <a href="named-templates.jsp" style="background-color: #ddd; color: black;">Named templates</a>
+            <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
+            <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
+            <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>
+            <a href="xsl-number.jsp">XSLT &lt;number&gt;</a>
+            <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
+            <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
+        </div>
+
+        <div class="content">
+            <h1>Named templates</h1>
+            <p>
+                Templates can have custom names. The name of the template is specified by <strong>name</strong> attribute.
+                After you name the template you can call it using <strong>&lt;xsl:call-template <span style="color: rgb(135, 202, 99);">name</span>
                 <span style="color: white;">=</span>
                 <span style="color: rgb(255, 81, 142);">&quot;nameOfTemplate&quot;</span>/&gt;</strong>.
-            Calling tempalte is similar to calling function in programming. You can even call them with arguments.
-        </p>
-        <h2>Calling templates with arguments</h2>
-        <p>To call template with an argument you need to put tag <strong>&lt;xsl:with-param&gt;</strong> inside the tag <strong>&lt;xsl:call-template&gt;</strong> like this<br/><br/>
-            <strong>&lt;xsl:call-template <span style="color: rgb(135, 202, 99);">name</span> <span style="color: white;">=</span>
-            <span style="color: rgb(255, 81, 142);">&quot;nameOfTemplate&quot;</span>&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&lt;xsl:with-param <span style="color: rgb(135, 202, 99);">name</span> <span style="color: white;">=</span> <span style="color: rgb(255, 81, 142);">&quot;nameOfArgument&quot;</span> <span style="color: rgb(135, 202, 99);">match</span> <span style="color: white;">=</span> <span style="color: rgb(255, 81, 142);">&quot;some/xpath&quot;</span>/&gt; <br/>
-            &nbsp;&nbsp;&nbsp;...<br/>
-            &lt;/xsl:call-template&gt;</strong><br/>
-            <br/>
-            You can add more arguments, which is symbolized with dots.
-        </p>
-        <div class="floatingHalfBox">
-            <h3>XML File</h3>
-            <pre class="prettyprint linenums">
+                Calling tempalte is similar to calling function in programming. You can even call them with arguments.
+            </p>
+            <h2>Calling templates with arguments</h2>
+            <p>To call template with an argument you need to put tag <strong>&lt;xsl:with-param&gt;</strong> inside the tag <strong>&lt;xsl:call-template&gt;</strong> like this<br/><br/>
+                <strong>&lt;xsl:call-template <span style="color: rgb(135, 202, 99);">name</span> <span style="color: white;">=</span>
+                    <span style="color: rgb(255, 81, 142);">&quot;nameOfTemplate&quot;</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;xsl:with-param <span style="color: rgb(135, 202, 99);">name</span> <span style="color: white;">=</span> <span style="color: rgb(255, 81, 142);">&quot;nameOfArgument&quot;</span> <span style="color: rgb(135, 202, 99);">match</span> <span style="color: white;">=</span> <span style="color: rgb(255, 81, 142);">&quot;some/xpath&quot;</span>/&gt; <br/>
+                    &nbsp;&nbsp;&nbsp;...<br/>
+                    &lt;/xsl:call-template&gt;</strong><br/>
+                <br/>
+                You can add more arguments, which is symbolized with dots.
+            </p>
+            <div class="floatingHalfBox">
+                <h3>XML File</h3>
+                <pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;persons&gt;
     &lt;person&gt;
@@ -50,10 +63,10 @@
     &lt;/person&gt;
 &lt;/persons&gt;
             </pre>
-        </div>
-        <div class="floatingHalfBox">
-            <h3>XSLT File</h3>
-            <pre class="prettyprint linenums">
+            </div>
+            <div class="floatingHalfBox">
+                <h3>XSLT File</h3>
+                <pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
 
@@ -95,8 +108,8 @@
 
 &lt;/xsl:stylesheet&gt;
             </pre>
-        </div>
-        <div class="floatingHalfBox">
+            </div>
+            <div class="floatingHalfBox">
                 <h3>Output</h3>
                 <pre class="prettyprint linenums">
 &lt;html&gt;
@@ -124,32 +137,33 @@
         &lt;/table&gt;
 &lt;/html&gt;
                 </pre>
-        </div>
-        <div class="floatingHalfBox">
-            <h3>Preview</h3>
-            <p>This is how result html looks like displayed by browser.</p>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Income</th>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>75000</td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>Snow</td>
-                    <td>80000</td>
-                </tr>
-                <tr>
-                    <td>Alice</td>
-                    <td>Carlson</td>
-                    <td>76000</td>
-                </tr>
-            </table>
+            </div>
+            <div class="floatingHalfBox">
+                <h3>Preview</h3>
+                <p>This is how result html looks like displayed by browser.</p>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Income</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>75000</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Snow</td>
+                        <td>80000</td>
+                    </tr>
+                    <tr>
+                        <td>Alice</td>
+                        <td>Carlson</td>
+                        <td>76000</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 </html>

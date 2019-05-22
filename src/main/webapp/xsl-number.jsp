@@ -14,6 +14,7 @@
     <div id="navbar">
         <a href="/xslt_examples" class="active">Home</a>
         <a href="priority-of-templates.jsp">Priority of templates</a>
+        <a href="named-templates.jsp">Named templates</a>
         <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
         <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
         <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>
@@ -221,17 +222,12 @@
             &lt;/html&gt;
         &lt;/xsl:template&gt;
 
-        &lt;/xsl:stylesheet&gt;</pre>
-
-
-
+        &lt;/xsl:stylesheet&gt;
+            </pre>
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
         <div class="floatingBox">
+            <br/>
             <h3>Output</h3>
             <table>
                 <tr>

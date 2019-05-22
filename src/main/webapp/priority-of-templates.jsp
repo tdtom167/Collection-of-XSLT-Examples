@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <head>
-        <title>Named Templates</title>
+        <title>Priority of templates</title>
         <!-- Syntax Highlight -->
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/desert.css" type="text/css">
@@ -15,6 +15,7 @@
         <div id="navbar">
             <a href="/xslt_examples" class="active">Home</a>
             <a href="priority-of-templates.jsp" style="background-color: #ddd; color: black;">Priority of templates</a>
+            <a href="named-templates.jsp">Named templates</a>
             <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
             <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
             <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>

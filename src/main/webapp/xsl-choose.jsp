@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>XSLT &lt;xsl:value-of&gt; Element</title>
+    <title>XSLT &lt;xsl:choose&gt; Element</title>
     <!-- Syntax Highlight -->
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/desert.css" type="text/css">
@@ -19,6 +19,7 @@
     <div id="navbar">
         <a href="/xslt_examples" class="active">Home</a>
         <a href="priority-of-templates.jsp">Priority of templates</a>
+        <a href="named-templates.jsp">Named templates</a>
         <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
         <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
         <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>
@@ -28,7 +29,7 @@
     </div>
 
     <div class="content">
-        <h1>XSLT &lt;choose&gt; Element</h1>
+        <h1>XSLT &lt;xsl:choose&gt; Element</h1>
         <hr>
         <h2>Definition and usage</h2>
         <p>The <code class="light">&lt;xsl:choose&gt;</code> element is used in conjunction with
@@ -94,7 +95,7 @@
                 &lt;xsl:value-of select="family-name"/&gt;
                     &lt;p&gt;
                          &lt;xsl:choose&gt;
-                                &lt;xsl:when test=&quot;age &lt; 18&quot;&gt;
+                                &lt;xsl:when test="age &amp;lt; 18"&gt;
                                     child
                                 &lt;/xsl:when&gt;
                             &lt;xsl:otherwise&gt;

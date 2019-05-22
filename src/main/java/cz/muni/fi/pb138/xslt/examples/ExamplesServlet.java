@@ -25,13 +25,13 @@ public class ExamplesServlet extends HttpServlet {
             case "/xsl-choose":
                 JSP = "/xsl-choose.jsp";
                 break;
-            case "/xsl:copy":
+            case "/xsl-copy":
                 JSP = "/xsl-copy.jsp";
                 break;
             case "/xsl-for-each":
                 JSP = "/xsl-for-each.jsp";
                 break;
-            case "/xsl:if":
+            case "/xsl-if":
                 JSP = "/xsl-if.jsp";
                 break;
             case "/xsl-number":

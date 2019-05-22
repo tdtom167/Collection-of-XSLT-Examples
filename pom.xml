@@ -77,7 +77,7 @@
                     <deployables>
                         <deployable>
                             <properties>
-                                <context>/xslt-examples</context>
+                                <context>/xslt</context>
                             </properties>
                         </deployable>
                     </deployables>

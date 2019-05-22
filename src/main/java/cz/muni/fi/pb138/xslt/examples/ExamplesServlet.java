@@ -16,14 +16,29 @@ public class ExamplesServlet extends HttpServlet {
         System.out.println(action);
         final String JSP;
         switch (action) {
+            case "/named-templates":
+                JSP = "/named-templates.jsp";
+                break;
             case "/priority-of-templates":
                 JSP = "/priority-of-templates.jsp";
+                break;
+            case "/xsl-choose":
+                JSP = "/xsl-choose.jsp";
+                break;
+            case "/xsl:copy":
+                JSP = "/xsl-copy.jsp";
                 break;
             case "/xsl-for-each":
                 JSP = "/xsl-for-each.jsp";
                 break;
+            case "/xsl:if":
+                JSP = "/xsl-if.jsp";
+                break;
             case "/xsl-number":
                 JSP = "/xsl-number.jsp";
+                break;
+            case "/xsl-value-of":
+                JSP = "/xsl-value-of.jsp";
                 break;
             default:
                 JSP = "/index.jsp";

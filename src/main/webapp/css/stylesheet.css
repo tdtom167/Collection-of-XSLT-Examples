@@ -6,7 +6,7 @@ hr {
 
 /* highlighting code background */
 code {
-    background-color: lightgray;
+    background-color: #444;
 }
 
 /* floating box used for displaying file content on half of the screen */
@@ -28,8 +28,22 @@ code {
 }
 
 .light {
-    background-color: lightgray;
+    background-color: #444;
 }
 body {
     font-family: 'Kodchasan', sans-serif;
+    background: #222;
+    color: #EEE;
+}
+
+h1, h2, h3 {
+    color: rgb(57, 182, 231);
+}
+
+strong {
+    color: rgb(99, 202, 243);
+}
+
+pre {
+    overflow: auto;
 }

@@ -1,11 +1,11 @@
 <%@page contentType="text/html;charset=utf-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <head>
         <title>Named Templates</title>
         <!-- Syntax Highlight -->
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/desert.css" type="text/css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/stylesheet.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
             
         <style>
@@ -26,7 +26,7 @@
         <h1>Priority of templates</h1>
         <p>Priority of template can be specified by <strong>priority</strong> attribute. The default priority is <em>0.5</em> .
             Template withhigher value in <strong>priority</strong> attribute is used. If two templates have the same priority then the last one in the file is used.</p>
-		<div class="fileBlockFloat">
+		<div class="floatingHalfBox">
 			<h3>XML file</h3>
 			<pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -52,7 +52,7 @@
 			</pre>
 		</div>
 		
-		<div class="fileBlockFloat">
+		<div class="floatingHalfBox">
 			<h3>XSLT file</h3>
         	<pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -82,7 +82,7 @@
 			</pre>
 		</div>
 		
-		<div class="fileBlock">
+		<div class="floatingBox">
 			<h3>Output</h3>
 			<pre class="prettyprint linenums">
 Template matching name John

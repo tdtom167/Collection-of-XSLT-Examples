@@ -5,7 +5,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.transform.*;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
 
 @WebServlet("/examples/*")
 public class ExamplesServlet extends HttpServlet {
@@ -13,6 +18,7 @@ public class ExamplesServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getPathInfo();
+        System.out.println("GET " + action);
         System.out.println(action);
         final String JSP;
         switch (action) {
@@ -24,6 +30,9 @@ public class ExamplesServlet extends HttpServlet {
                 break;
             case "/priority-of-templates":
                 JSP = "/priority-of-templates.jsp";
+                break;
+            case "/transformer":
+                JSP = "/transformer.jsp";
                 break;
             case "/xsl-choose":
                 JSP = "/xsl-choose.jsp";
@@ -50,6 +59,40 @@ public class ExamplesServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {}
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        String action = request.getPathInfo();
+        System.out.println("POST " + action);
+        if (!action.matches("/transform.*")) {
+            response.sendError(HttpServletResponse.SC_NOT_FOUND, "Unknown action " + action);
+            return;
+        }
+        try {
+            String xml = request.getParameter("xml");
+            String xslt = request.getParameter("xslt");
+            System.out.println(xml);
+            System.out.println(xslt);
+            String result = transform(xml, xslt);
+            request.setAttribute("result", result);
+        } catch (TransformerException e) {
+            request.setAttribute("error", e.getMessage());
+        } finally {
+            System.out.println("REDIRECTING");
+            request.getRequestDispatcher("/transformer.jsp").forward(request, response);
+        }
+    }
+
+    private String transform(String xml, String xslt) throws TransformerException {
+        System.out.println("TRANSFORM STARTED");
+        Source xmlSource = new StreamSource(new StringReader(xml));
+        Source xsltSource = new StreamSource(new StringReader(xslt));
+        System.out.println("SOURCES INITIALIZED");
+        TransformerFactory factory = TransformerFactory.newInstance();
+        Transformer transformer = factory.newTransformer(xsltSource);
+        System.out.println("TRANSFORMER CREATED");
+        StringWriter stringWriter = new StringWriter();
+        transformer.transform(xmlSource, new StreamResult(stringWriter));
+        System.out.println("TRANSFORM FINISHED");
+        return stringWriter.getBuffer().toString();
+    }
 
 }

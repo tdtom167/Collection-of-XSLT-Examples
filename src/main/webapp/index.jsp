@@ -20,7 +20,7 @@
             <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
         </div>
 
-        <div class="floatingBox">
+        <div class="content">
             <h1>Welcome</h1>
 
             <h3>Examples:</h3>

@@ -22,7 +22,7 @@
         <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
     </div>
 
-    <div class="floatingBox">
+    <div class="content">
         <h1>XSLT &lt;xsl:number&gt; Element</h1>
         <hr>
         The <code>&lt;xsl:number&gt;</code> element is used to determine the integer position of the current node in the source. It is also used to format a number.

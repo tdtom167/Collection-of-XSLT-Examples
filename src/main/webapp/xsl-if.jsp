@@ -22,7 +22,7 @@
         <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
     </div>
 
-    <div class="floatingBox">
+    <div class="content">
         <h1>XSLT &lt;xsl:if&gt; Element</h1>
         <hr>
         The <code>&lt;xsl:if&gt;</code> element is used to put a conditional test against the content of the XML file.

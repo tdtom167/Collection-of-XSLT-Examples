@@ -27,7 +27,7 @@
         <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
     </div>
 
-    <div class="floatingBox">
+    <div class="content">
         <h1>XSLT &lt;xsl:copy-of&gt; Element</h1>
         <hr>
         <h2>Definition and usage</h2>

@@ -40,6 +40,8 @@ body {
 #navbar {
     overflow: hidden;
     background-color: #333;
+    position: fixed;
+    width: 100%;
 }
 
 /* Navbar links */
@@ -66,7 +68,7 @@ body {
 
 /* Page content */
 .content {
-    padding: 16px;
+    padding: 50px 16px 16px 16px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */

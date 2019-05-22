@@ -16,6 +16,9 @@ public class ExamplesServlet extends HttpServlet {
         System.out.println(action);
         final String JSP;
         switch (action) {
+            case "/application-of-templates":
+                JSP = "/application-of-templates.jsp";
+                break;
             case "/named-templates":
                 JSP = "/named-templates.jsp";
                 break;

@@ -99,3 +99,7 @@ strong {
 .browserDisplay h3 {
     color: #222;
 }
+
+a {
+    color: rgb(72, 134, 248);
+}

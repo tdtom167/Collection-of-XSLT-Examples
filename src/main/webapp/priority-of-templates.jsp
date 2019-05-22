@@ -1,5 +1,4 @@
 <%@page contentType="text/html;charset=utf-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <head>
         <title>Priority of templates</title>
@@ -9,7 +8,6 @@
         <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/stylesheet.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
-            
     </head>
     <body>
         <div id="navbar">

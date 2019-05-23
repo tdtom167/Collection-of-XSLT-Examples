@@ -51,54 +51,54 @@
         <div class="floatingHalfBox">
             <h3>XML File (customers.xml)</h3>
             <pre class="prettyprint linenums">
-    &lt;?xml version="1.0"?&gt;
-    &lt;?xml-stylesheet type="text/xsl" href="foreach.xsl" ?&gt;
-    &lt;customers>&lt;
-        &lt;customer&gt;
-            &lt;name>John Smith&lt;/name&gt;
-            &lt;address>123 Oak St.&lt;/address&gt;
-            &lt;state>WA&lt;/state&gt;
-            &lt;phone>(206) 123-4567&lt;/phone&gt;
-        &lt;/customer&gt;
-        &lt;customer&gt;
-            &lt;name>Zack Zwyker&lt;/name&gt;
-            &lt;address>368 Elm St.&lt;/address&gt;
-            &lt;state>WA&lt;/state&gt;
-            &lt;phone>(206) 423-4537&lt;/phone&gt;
-        &lt;/customer&gt;
-        &lt;customer&gt;
-            &lt;name>Albert Aikens&lt;/name&gt;
-            &lt;address>368 Elm St.&lt;/address&gt;
-            &lt;state>WA&lt;/state&gt;
-            &lt;phone>(206) 423-4537&lt;/phone&gt;
-        &lt;/customer&gt;
-    &lt;/customers&gt;</pre>
+&lt;?xml version="1.0"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="foreach.xsl" ?&gt;
+&lt;customers>&lt;
+    &lt;customer&gt;
+        &lt;name>John Smith&lt;/name&gt;
+        &lt;address>123 Oak St.&lt;/address&gt;
+        &lt;state>WA&lt;/state&gt;
+        &lt;phone>(206) 123-4567&lt;/phone&gt;
+    &lt;/customer&gt;
+    &lt;customer&gt;
+        &lt;name>Zack Zwyker&lt;/name&gt;
+        &lt;address>368 Elm St.&lt;/address&gt;
+        &lt;state>WA&lt;/state&gt;
+        &lt;phone>(206) 423-4537&lt;/phone&gt;
+    &lt;/customer&gt;
+    &lt;customer&gt;
+        &lt;name>Albert Aikens&lt;/name&gt;
+        &lt;address>368 Elm St.&lt;/address&gt;
+        &lt;state>WA&lt;/state&gt;
+        &lt;phone>(206) 423-4537&lt;/phone&gt;
+    &lt;/customer&gt;
+&lt;/customers&gt;</pre>
         </div>
         <div class="floatingHalfBox">
             <h3>XSLT File (foreach.xsl)</h3>
             <pre class="prettyprint linenums">
-    &lt;?xml version="1.0"?&gt;
-    &lt;xsl:stylesheet version="1.0"
-            xmlns:xsl="http://www.w3.org/1999/XSL/Transform" &gt;
+&lt;?xml version="1.0"?&gt;
+&lt;xsl:stylesheet version="1.0"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform" &gt;
 
-    &lt;xsl:template match="/"&gt;
-        &lt;html&gt;
-            &lt;body&gt;
-                &lt;table&gt;
-                    &lt;xsl:for-each select="customers/customer"&gt;
-                        &lt;xsl:sort select="name"/&gt;
-                        &lt;tr&gt;
-                            &lt;td&gt;&lt;xsl:value-of select="name" />&lt;/td&gt;
-                            &lt;td&gt;&lt;xsl:value-of select="address" />&lt;/td&gt;
-                            &lt;td&gt;&lt;xsl:value-of select="phone" />&lt;/td&gt;
-                        &lt;/tr&gt;
-                    &lt;/xsl:for-each&gt;
-                &lt;/table&gt;
-            &lt;/body&gt;
-        &lt;/html&gt;
-    &lt;/xsl:template&gt;
+&lt;xsl:template match="/"&gt;
+    &lt;html&gt;
+        &lt;body&gt;
+            &lt;table&gt;
+                &lt;xsl:for-each select="customers/customer"&gt;
+                    &lt;xsl:sort select="name"/&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;xsl:value-of select="name" />&lt;/td&gt;
+                        &lt;td&gt;&lt;xsl:value-of select="address" />&lt;/td&gt;
+                        &lt;td&gt;&lt;xsl:value-of select="phone" />&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/xsl:for-each&gt;
+            &lt;/table&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+&lt;/xsl:template&gt;
 
-    &lt;/xsl:stylesheet&gt;</pre>
+&lt;/xsl:stylesheet&gt;</pre>
         </div>
 
 
@@ -125,27 +125,27 @@
             <br/>
             <b>Processor output:</b>
             <pre class="prettyprint linenums">
-    &lt;html&gt;
-        &lt;body&gt;
-            &lt;table&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;Albert Aikens&lt;/td&gt;
-                    &lt;td&gt;368 Elm St.&lt;/td&gt;
-                    &lt;td&gt;(206) 423-4537&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;John Smith&lt;/td&gt;
-                    &lt;td&gt;123 Oak St.&lt;/td&gt;
-                    &lt;td&gt;(206) 123-4567&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;Zack Zwyker&lt;/td&gt;
-                    &lt;td&gt;368 Elm St.&lt;/td&gt;
-                    &lt;td&gt;(206) 423-4537&lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/table&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;</pre>
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Albert Aikens&lt;/td&gt;
+                &lt;td&gt;368 Elm St.&lt;/td&gt;
+                &lt;td&gt;(206) 423-4537&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;John Smith&lt;/td&gt;
+                &lt;td&gt;123 Oak St.&lt;/td&gt;
+                &lt;td&gt;(206) 123-4567&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Zack Zwyker&lt;/td&gt;
+                &lt;td&gt;368 Elm St.&lt;/td&gt;
+                &lt;td&gt;(206) 423-4537&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
         </div>
     </div>
 </body>

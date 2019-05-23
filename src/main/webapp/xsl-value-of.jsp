@@ -40,7 +40,7 @@
         <h2>Syntax</h2>
         <div class="floatingBox">
         <pre class="prettyprint linenums">
-    &lt;xsl:value-of select=&quot;expression&quot; disable-output-escaping=&quot;yes|no&quot;/&gt;</pre>
+&lt;xsl:value-of select=&quot;expression&quot; disable-output-escaping=&quot;yes|no&quot;/&gt;</pre>
         </div>
 
         <hr>
@@ -107,36 +107,36 @@
         <div class="floatingHalfBox">
             <h3>XML File (family.xml)</h3>
             <pre class="prettyprint linenums">
-    &lt;?xml version="1.0"?&gt;
-    &lt;?xml-stylesheet type="text/xsl" href="family.xsl"?&gt;
-    &lt;family&gt;
-        &lt;person&gt;
-            &lt;first-name age="10"&gt;Fred&lt;/first-name&gt;
-            &lt;family-name&gt;Smith&lt;/family-name&gt;
-        &lt;/person&gt;
-        &lt;person&gt;
-            &lt;first-name age="13"&gt;Jill&lt;/first-name&gt;
-            &lt;family-name&gt;Jones&lt;/family-name&gt;
-        &lt;/person&gt;
-    &lt;/family&gt;</pre>
+&lt;?xml version="1.0"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="family.xsl"?&gt;
+&lt;family&gt;
+    &lt;person&gt;
+        &lt;first-name age="10"&gt;Fred&lt;/first-name&gt;
+        &lt;family-name&gt;Smith&lt;/family-name&gt;
+    &lt;/person&gt;
+    &lt;person&gt;
+        &lt;first-name age="13"&gt;Jill&lt;/first-name&gt;
+        &lt;family-name&gt;Jones&lt;/family-name&gt;
+    &lt;/person&gt;
+&lt;/family&gt;</pre>
         </div>
 
         <div class="floatingHalfBox">
             <h3>XSLT File (family.xsl)</h3>
             <pre class="prettyprint linenums">
-    &lt;?xml version="1.0"?&gt;
-    &lt;xsl:stylesheet version="1.0"
-            xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;?xml version="1.0"?&gt;
+&lt;xsl:stylesheet version="1.0"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
 
-    &lt;xsl:template match="person"&gt;
-        &lt;p&gt;
-            &lt;xsl:value-of select="first-name"/&gt;
-            &lt;xsl:text&gt; &lt;/xsl:text&gt;
-            &lt;xsl:value-of select="family-name"/&gt;
-        &lt;/p&gt;
-    &lt;/xsl:template&gt;
+&lt;xsl:template match="person"&gt;
+    &lt;p&gt;
+        &lt;xsl:value-of select="first-name"/&gt;
+        &lt;xsl:text&gt; &lt;/xsl:text&gt;
+        &lt;xsl:value-of select="family-name"/&gt;
+    &lt;/p&gt;
+&lt;/xsl:template&gt;
 
-    &lt;/xsl:stylesheet&gt;</pre>
+&lt;/xsl:stylesheet&gt;</pre>
         </div>
 
         <div class="floatingBox">
@@ -147,9 +147,9 @@
 
             <b>Processor output:</b>
             <pre class="prettyprint linenums">
-    &lt;?xml version="1.0" encoding="UTF-16"?&gt;
-        &lt;p&gt;Fred Smith&lt;/p&gt;
-        &lt;p&gt;Jill Jones&lt;/p&gt;</pre>
+&lt;?xml version="1.0" encoding="UTF-16"?&gt;
+    &lt;p&gt;Fred Smith&lt;/p&gt;
+    &lt;p&gt;Jill Jones&lt;/p&gt;</pre>
         </div>
     </div>
 </body>

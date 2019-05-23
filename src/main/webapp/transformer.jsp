@@ -6,18 +6,14 @@
         <title>XSLT Transformation</title>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/stylesheet.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/desert.css" type="text/css">
     </head>
     <body>
         <style>
-            /*div {*/
-                /*width: 49%;*/
-                /*float: left;*/
-                /*padding: 0.5%;*/
-            /*}*/
-
             textarea {
                 width: 100%;
-                height: 60%;
+                height: 50%;
                 overflow: auto;
             }
         </style>
@@ -52,12 +48,15 @@
             </form>
 
             <c:if test="${not empty error}">
-                <div style="border: solid 1px red; background-color: yellow; padding: 10px">
+                <div style="color: black; border: solid 1px red; background-color: lightgray; padding: 10px">
                     <c:out value="${error}"/>
                 </div>
             </c:if>
-            <pre>
-            <c:out value="${result}"/>
-        </pre>
+
+            <div class="floatingBox">
+                <h3>Output</h3>
+                <pre class="prettyprint linenums">
+<c:out value="${result}"/></pre>
+            </div>
         </div>
     </body>

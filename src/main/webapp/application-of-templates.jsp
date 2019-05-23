@@ -10,16 +10,31 @@
         <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Application of templates</h1>
-        <p>
-            Templates can be applied using <strong>&lt;xsl:apply-templates <span style="color: rgb(135, 202, 99);">match</span><span style="color: white;">=</span><span style="color: rgb(255, 81, 142);">&quot;some/xpath&quot;</span> <span style="color: rgb(135, 202, 99);">mode</span><span style="color: white;">=</span><span style="color: rgb(255, 81, 142);">&quot;nameOfMode&quot;</span>/&gt;</strong>.
-            Both of the attributes are optional. If you don't specify <strong>match</strong> attribite then all children of current element will be matched.
-            Using <strong>match</strong> you can select which children will be selected. You can also specify <strong>mode</strong> which will affect which template will be used.
-            Applying templates also depends on <a href="${pageContext.request.contextPath}/examples/priority-of-templates">priority of templates</a>. Templates can also have names and being called, see <a href="${pageContext.request.contextPath}/examples/named-templates">named teplates</a>.
-        </p>
-        <div class="fileHalfScreen">
-            <h3>XML File</h3>
-            <pre class="prettyprint linenums">
+        <div id="navbar">
+            <a href="/xslt_examples" class="active">Home</a>
+            <a href="application-of-templates.jsp" style="background-color: #ddd; color: black;">Application of templates</a>
+            <a href="priority-of-templates.jsp">Priority of templates</a>
+            <a href="named-templates.jsp">Named templates</a>
+            <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
+            <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
+            <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>
+            <a href="xsl-number.jsp">XSLT &lt;number&gt;</a>
+            <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
+            <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
+            <a href="transformer.jsp">Transform</a>
+        </div>
+
+        <div class="content">
+            <h1>Application of templates</h1>
+            <p>
+                Templates can be applied using <strong>&lt;xsl:apply-templates <span style="color: rgb(135, 202, 99);">match</span><span style="color: white;">=</span><span style="color: rgb(255, 81, 142);">&quot;some/xpath&quot;</span> <span style="color: rgb(135, 202, 99);">mode</span><span style="color: white;">=</span><span style="color: rgb(255, 81, 142);">&quot;nameOfMode&quot;</span>/&gt;</strong>.
+                Both of the attributes are optional. If you don't specify <strong>match</strong> attribite then all children of current element will be matched.
+                Using <strong>match</strong> you can select which children will be selected. You can also specify <strong>mode</strong> which will affect which template will be used.
+                Applying templates also depends on <a href="${pageContext.request.contextPath}/examples/priority-of-templates">priority of templates</a>. Templates can also have names and being called, see <a href="${pageContext.request.contextPath}/examples/named-templates">named teplates</a>.
+            </p>
+            <div class="fileHalfScreen">
+                <h3>XML File</h3>
+                <pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;vehicles&gt;
     &lt;car&gt;
@@ -43,10 +58,10 @@
     &lt;/car&gt;
 &lt;/vehicles&gt;
             </pre>
-        </div>
-        <div class="fileHalfScreen">
-            <h3>XSLT File</h3>
-            <pre class="prettyprint linenums">
+            </div>
+            <div class="fileHalfScreen">
+                <h3>XSLT File</h3>
+                <pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
 
@@ -101,8 +116,8 @@
 
 &lt;/xsl:stylesheet&gt;
             </pre>
-        </div>
-        <div class="fileHalfScreen">
+            </div>
+            <div class="fileHalfScreen">
                 <h3>Output</h3>
                 <pre class="prettyprint linenums">
 &lt;html&gt;
@@ -145,51 +160,52 @@
     &lt;/table&gt;
 &lt;/html&gt;
                 </pre>
-        </div>
-        <div class="fileHalfScreen">
-            <h3>Preview</h3>
-            <p>This is how result html looks like displayed by browser.</p>
-            <div class="browserDisplay">
-                <h1>Vehicles</h1>
-                <h2>Cars</h2>
-                <h3>Cars list</h3>
-                <ul>
-                    <li>Porsche 911</li>
-                    <li>Tesla Model X</li>
-                </ul>
-                <h3>Cars table</h3>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Porsche 911</td>
-                        <td>300000</td>
-                    </tr>
-                    <tr>
-                        <td>Tesla Model X</td>
-                        <td>500000</td>
-                    </tr>
-                </table>
-                <h2>Motorcycles</h2>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Suzuki GSX-R1000X</td>
-                        <td>180000</td>
-                    </tr>
-                    <tr>
-                        <td>Yamaha 2019 YZ450F</td>
-                        <td>200000</td>
-                    </tr>
-                </table>
             </div>
+            <div class="fileHalfScreen">
+                <h3>Preview</h3>
+                <p>This is how result html looks like displayed by browser.</p>
+                <div class="browserDisplay">
+                    <h1>Vehicles</h1>
+                    <h2>Cars</h2>
+                    <h3>Cars list</h3>
+                    <ul>
+                        <li>Porsche 911</li>
+                        <li>Tesla Model X</li>
+                    </ul>
+                    <h3>Cars table</h3>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Porsche 911</td>
+                            <td>300000</td>
+                        </tr>
+                        <tr>
+                            <td>Tesla Model X</td>
+                            <td>500000</td>
+                        </tr>
+                    </table>
+                    <h2>Motorcycles</h2>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Suzuki GSX-R1000X</td>
+                            <td>180000</td>
+                        </tr>
+                        <tr>
+                            <td>Yamaha 2019 YZ450F</td>
+                            <td>200000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p>First the car template with mode list is matched. This means all motorcycles are ignored. Then the car template without mode,
+                which creates table of cars. And then the template matching motorcycles is applied.</p>
         </div>
-        <p>First the car template with mode list is matched. This means all motorcycles are ignored. Then the car template without mode,
-             which creates table of cars. And then the template matching motorcycles is applied.</p>
     </body>
 </html>

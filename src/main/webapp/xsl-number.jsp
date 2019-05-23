@@ -13,6 +13,7 @@
 <body>
     <div id="navbar">
         <a href="/xslt_examples" class="active">Home</a>
+        <a href="application-of-templates.jsp">Application of templates</a>
         <a href="priority-of-templates.jsp">Priority of templates</a>
         <a href="named-templates.jsp">Named templates</a>
         <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
@@ -21,6 +22,7 @@
         <a href="xsl-number.jsp" style="background-color: #ddd; color: black;">XSLT &lt;number&gt;</a>
         <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
         <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
+        <a href="transformer.jsp">Transform</a>
     </div>
 
     <div class="content">

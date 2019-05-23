@@ -37,9 +37,9 @@
         <h2>Syntax</h2>
         <div class="floatingBox">
         <pre class="prettyprint linenums">
-    &lt;xsl:if test="expression"&gt;
-        ...some output if the expression is true...
-    &lt;/xsl:if&gt;</pre>
+&lt;xsl:if test="expression"&gt;
+    ...some output if the expression is true...
+&lt;/xsl:if&gt;</pre>
         </div>
 
         <hr>
@@ -57,23 +57,23 @@
         <div class="floatingHalfBox">
             <h3>XML File (stock.xml)</h3>
             <pre class="prettyprint linenums">
-    &lt;?xml version='1.0'?&gt;
-    &lt;?xml-stylesheet type="text/xsl" href="ifstock.xsl" ?&gt;
-    &lt;stocks&gt;
-       &lt;stock international="no"&gt;Microsoft&lt;/stock&gt;
-       &lt;stock international="no"&gt;Wingtip Toys&lt;/stock&gt;
-       &lt;stock international="yes"&gt;Contoso Pharmaceuticals&lt;/stock&gt;
-       &lt;stock international="no"&gt;Contoso, Ltd&lt;/stock&gt;
-       &lt;stock international="yes"&gt;Fabrikam, Inc.&lt;/stock&gt;
-    &lt;/stocks&gt;</pre>
+&lt;?xml version='1.0'?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="ifstock.xsl" ?&gt;
+&lt;stocks&gt;
+   &lt;stock international="no"&gt;Microsoft&lt;/stock&gt;
+   &lt;stock international="no"&gt;Wingtip Toys&lt;/stock&gt;
+   &lt;stock international="yes"&gt;Contoso Pharmaceuticals&lt;/stock&gt;
+   &lt;stock international="no"&gt;Contoso, Ltd&lt;/stock&gt;
+   &lt;stock international="yes"&gt;Fabrikam, Inc.&lt;/stock&gt;
+&lt;/stocks&gt;</pre>
         </div>
 
         <div class="floatingHalfBox">
             <h3>XSLT File (ifstock.xsl)</h3>
             <pre class="prettyprint linenums">
-    &lt;?xml version='1.0'?&gt;
-    &lt;xsl:stylesheet version="1.0"
-          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+&lt;?xml version='1.0'?&gt;
+&lt;xsl:stylesheet version="1.0"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
 
     &lt;xsl:template match="/"&gt;
         &lt;html&gt;
@@ -81,16 +81,16 @@
                 &lt;xsl:apply-templates/&gt;
             &lt;/body&gt;
         &lt;/html&gt;
-        &lt;/xsl:template&gt;
+    &lt;/xsl:template&gt;
 
-        &lt;xsl:template match="stock"&gt;
-            &lt;p&gt;
-                &lt;xsl:if test="@international='yes'">International Stock: &lt;/xsl:if&gt;
-                &lt;xsl:apply-templates/&gt;
-            &lt;/p&gt;
-        &lt;/xsl:template&gt;
+    &lt;xsl:template match="stock"&gt;
+        &lt;p&gt;
+            &lt;xsl:if test="@international='yes'">International Stock: &lt;/xsl:if&gt;
+            &lt;xsl:apply-templates/&gt;
+        &lt;/p&gt;
+    &lt;/xsl:template&gt;
 
-    &lt;/xsl:stylesheet&gt;</pre>
+&lt;/xsl:stylesheet&gt;</pre>
         </div>
 
         <div class="floatingBox">

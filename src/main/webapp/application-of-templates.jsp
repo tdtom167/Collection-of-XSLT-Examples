@@ -102,6 +102,11 @@
 &lt;/xsl:stylesheet&gt;
             </pre>
         </div>
+
+        <div>
+            <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
+        </div>
+
         <div class="fileHalfScreen">
                 <h3>Output</h3>
                 <pre class="prettyprint linenums">

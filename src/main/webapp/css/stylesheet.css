@@ -79,8 +79,7 @@ strong {
 
 /* Page content */
 .content {
-    /*padding: 50px 16px 16px 16px;*/
-    padding: 50px 5% 16px 5%;
+    padding: 100px 5% 16px 5%;
 }
 
 .browserDisplay {

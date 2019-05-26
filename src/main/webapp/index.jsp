@@ -25,41 +25,42 @@
         </div>
 
         <div class="content">
-            <h1 align="center">Collection of XSLT Examples</h1>
+            <div align="center">
+                <h1>Collection of XSLT Examples</h1>
+            </div>
+            <h3>What is XSLT?</h3>
+            <p>
+                XSL (eXtensible Stylesheet Language) is a styling language for XML.
+                XSLT stands for XSL Transformations and is used to transform XML documents into another format
+                such as HTML.
+            </p>
 
-            <h3>Examples:</h3>
-            <ul>
-                <li>
-                    <a href="priority-of-templates.jsp">Priority of templates</a>
-                </li>
-                <li>
-                    <a href="named-templates.jsp">Named templates</a><br/>
-                </li>
-                <li>
-                    <a href="xsl-if.jsp">xsl:if</a><br/>
-                </li>
-                <li>
-                    <a href="xsl-for-each.jsp">xsl:for-each</a><br/>
-                </li>
-                <li>
-                    <a href="xsl-value-of.jsp">xsl:value-of</a><br/>
-                </li>
-                <li>
-                    <a href="xsl-number.jsp">xsl:number</a><br/>
-                </li>
-                <li>
-                    <a href="xsl-choose.jsp">xsl:choose</a><br/>
-                </li>
-                <li>
-                    <a href="xsl-copy.jsp">xsl:copy-of</a><br/>
-                </li>
-                <li>
-                    <a href="literal-elements.jsp">Literal elements</a><br/>
-                </li>
-                <li>
-                    <a href="processing-mode.jsp">Processing mode</a><br/>
-                </li>
-            </ul>
+            <h3>Why do you need to learn XSLT? </h3>
+
+            <p>
+                Not many people know XSLT but it is a very powerful tool widely used for transforming XML documents
+                mainly in cases of ETL, HTML, and presentation of XML into more human-readable forms.
+                There is not a real alternative, therefore should not be missing in anyone's skill set who is interested
+                in markup languages. These examples will teach you how to use XSLT to transform XML documents into other
+                formats (like transforming XML into HTML).
+            </p>
+
+            <h3> What can you find on this website?  </h3>
+
+            <p>
+                This website with try it yourself examples will serve as a very good basis for learning, understanding XSLT
+                and will be your best friend anytime you need a quick reminder of an XSLT syntax.
+            </p>
+
+            <h3>What technologies did we use?</h3>
+            <p>
+            The website was developed using java servlet, jsp pages and can be run on localhost TomCat Server after cloning the repository from GitHub.
+            It was created as a part of a school group project for Masaryk University, Faculty of Informatics, Subject: PB138 Modern markup languages.
+
+            </p>
+            Don't wait any more and jump straight to it.
+            <hr>
+            Authors: Branislav Smolíček, Tomáš Bouma,  Jakub Bateľ, Marek Pavel Viskup.
         </div>
     </body>
 </html>

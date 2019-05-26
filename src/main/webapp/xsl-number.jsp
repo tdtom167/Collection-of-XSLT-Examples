@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <style>
+        th {padding: 10px;}
+        td {padding: 10px;}
+    </style>
     <div id="navbar">
         <a href="${pageContext.request.contextPath}/examples/" class="active">Home</a>
         <a href="${pageContext.request.contextPath}/examples/application-of-templates">Application of templates</a>

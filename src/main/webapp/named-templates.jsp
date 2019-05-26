@@ -19,6 +19,8 @@
             <a href="xsl-number.jsp">XSLT &lt;number&gt;</a>
             <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
             <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
+            <a href="literal-elements.jsp">Literal elements</a>
+            <a href="processing-mode.jsp">Processing mode</a>
             <a href="transformer.jsp">Transform</a>
         </div>
 
@@ -111,6 +113,11 @@
 &lt;/xsl:stylesheet&gt;
             </pre>
             </div>
+
+            <div>
+                <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
+            </div>
+
             <div class="floatingHalfBox">
                 <h3>Output</h3>
                 <pre class="prettyprint linenums">

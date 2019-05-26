@@ -22,6 +22,7 @@
         <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
         <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
         <a href="literal-elements.jsp">Literal elements</a>
+        <a href="processing-mode.jsp">Processing mode</a>
     </div>
 
     <div class="content">

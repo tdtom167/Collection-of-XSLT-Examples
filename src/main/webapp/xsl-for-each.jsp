@@ -30,10 +30,8 @@
     <div class="content">
         <h1>XSLT &lt;xsl:for-each&gt; Element</h1>
         <hr>
-        The <code>&lt;xsl:for-each&gt;</code> element allows you to do looping in XSLT.
-        <hr>
-        <h2>The &lt;xsl:for-each&gt; Element</h2>
-        The XSL <code>&lt;xsl:for-each&gt;</code> element can be used to select every XML element of a specified node-set.
+        The <code>&lt;xsl:for-each&gt;</code> element allows you to do looping in XSLT and can be used to select every XML element of a specified node-set.
+        <hr/>
 
         <h2>Remarks</h2>
         The <code>&lt;xsl:for-each&gt;</code> element establishes the context for iteration. The XSLT transformation
@@ -55,7 +53,7 @@
             <pre class="prettyprint linenums">
 &lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet type="text/xsl" href="foreach.xsl" ?&gt;
-&lt;customers>&lt;
+&lt;customers&gt;
     &lt;customer&gt;
         &lt;name>John Smith&lt;/name&gt;
         &lt;address>123 Oak St.&lt;/address&gt;
@@ -83,28 +81,24 @@
 &lt;xsl:stylesheet version="1.0"
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform" &gt;
 
-&lt;xsl:template match="/"&gt;
-    &lt;html&gt;
-        &lt;body&gt;
-            &lt;table&gt;
-                &lt;xsl:for-each select="customers/customer"&gt;
-                    &lt;xsl:sort select="name"/&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;&lt;xsl:value-of select="name" />&lt;/td&gt;
-                        &lt;td&gt;&lt;xsl:value-of select="address" />&lt;/td&gt;
-                        &lt;td&gt;&lt;xsl:value-of select="phone" />&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/xsl:for-each&gt;
-            &lt;/table&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
-&lt;/xsl:template&gt;
+    &lt;xsl:template match="/"&gt;
+        &lt;html&gt;
+            &lt;body&gt;
+                &lt;table&gt;
+                    &lt;xsl:for-each select="customers/customer"&gt;
+                        &lt;xsl:sort select="name"/&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;xsl:value-of select="name" />&lt;/td&gt;
+                            &lt;td&gt;&lt;xsl:value-of select="address" />&lt;/td&gt;
+                            &lt;td&gt;&lt;xsl:value-of select="phone" />&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/xsl:for-each&gt;
+                &lt;/table&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    &lt;/xsl:template&gt;
 
 &lt;/xsl:stylesheet&gt;</pre>
-        </div>
-
-        <div>
-            <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
         </div>
 
         <div class="floatingBox">
@@ -152,7 +146,12 @@
     &lt;/body&gt;
 &lt;/html&gt;</pre>
         </div>
+
+        <div>
+            <a target="_blank" href="${pageContext.request.contextPath}/examples/transformer" class="myButton">Try it yourself</a>
+        </div>
     </div>
+
 </body>
 
 </html>

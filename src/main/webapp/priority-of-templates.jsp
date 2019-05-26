@@ -86,10 +86,6 @@
 			</pre>
             </div>
 
-            <div>
-                <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
-            </div>
-
             <div class="floatingBox">
                 <h3>Output</h3>
                 <pre class="prettyprint linenums">
@@ -103,6 +99,10 @@ High priority template matching name Alice
                 Second person <strong>John Snow</strong> have income <em>80000</em> which means he can be matched with 3 templates. Each of these have <strong>default priority</strong> attribute so they are equal. This means the last one in the file is used. <br/>
                 The last person <strong>Alice Carlson</strong> fits two templates. Both the same, matching person with name <em>Alice</em>, except the first one have priority set to <em>1</em> which is more than <em>0.5</em> and that is why the first one is used.
             </p>
+
+            <div>
+                <a target="_blank" href="${pageContext.request.contextPath}/examples/transformer" class="myButton">Try it yourself</a>
+            </div>
         </div>
     </body>
 </html>

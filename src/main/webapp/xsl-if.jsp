@@ -32,9 +32,6 @@
         <hr>
         The <code>&lt;xsl:if&gt;</code> element is used to put a conditional test against the content of the XML file.
         <hr>
-        <h2>The &lt;xsl:if&gt; Element</h2>
-        To put a conditional if test against the content of the XML file, add an <code>&lt;xsl:if&gt;</code> element to the XSL document.
-        <hr>
 
         <h2>Syntax</h2>
         <div class="floatingBox">
@@ -95,10 +92,6 @@
 &lt;/xsl:stylesheet&gt;</pre>
         </div>
 
-        <div>
-            <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
-        </div>
-
         <div class="floatingBox">
             <h3>Output</h3>
             Microsoft<br/>
@@ -119,6 +112,10 @@
         &lt;p&gt;International Stock: Fabrikam, Inc.&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;</pre>
+        </div>
+
+        <div>
+            <a target="_blank" href="${pageContext.request.contextPath}/examples/transformer" class="myButton">Try it yourself</a>
         </div>
     </div>
 </body>

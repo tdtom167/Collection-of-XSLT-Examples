@@ -42,13 +42,12 @@
     <h2>Syntax</h2>
     <div class="floatingBox">
             <pre class="prettyprint linenums">
-        &lt;xsl:processing-instruction
-                name="process-name"&gt;
+&lt;xsl:processing-instruction
+        name="process-name"&gt;
 
-            &lt;!-- Content:template --&gt;
+    &lt;!-- Content:template --&gt;
 
-        &lt;/xsl:processing-instruction&gt;
-            </pre>
+&lt;/xsl:processing-instruction&gt;</pre>
     </div>
     <hr>
 
@@ -87,17 +86,15 @@
     <div class="floatingBox">
         <h3>This code:</h3>
         <pre class="prettyprint linenums">
-    &lt;xsl:processing-instruction name="xml-stylesheet"&gt;
-        href="style.css" type="text/css"
-    &lt;/xsl:processing-instruction&gt;
-        </pre>
+&lt;xsl:processing-instruction name="xml-stylesheet"&gt;
+    href="style.css" type="text/css"
+&lt;/xsl:processing-instruction&gt;</pre>
     </div>
 
     <div class="floatingBox">
         <h3>Creates this tag:</h3>
         <pre class="prettyprint linenums">
-    &lt;?xml-stylesheet href="style.css" type="text/css"?&gt;
-        </pre>
+&lt;?xml-stylesheet href="style.css" type="text/css"?&gt;</pre>
     </div>
 
 </div>

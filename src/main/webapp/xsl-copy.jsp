@@ -42,7 +42,7 @@
         <h2>Syntax</h2>
         <div class="floatingBox">
             <pre class="prettyprint linenums">
-        &lt;xsl:copy-of select=&quot;expression&quot; /&gt;</pre>
+&lt;xsl:copy-of select=&quot;expression&quot; /&gt;</pre>
         </div>
 
         <hr>
@@ -85,32 +85,32 @@
         <div class="floatingHalfBox">
             <h3>XML File (family.xml)</h3>
             <pre class="prettyprint linenums">
-        &lt;?xml version="1.0"?&gt;
-        &lt;?xml-stylesheet type="text/xsl" href="family.xsl"?&gt;
-        &lt;family&gt;
-            &lt;person&gt;
-                &lt;first-name age="10"&gt;Fred&lt;/first-name&gt;
-                &lt;family-name&gt;Smith&lt;/family-name&gt;
-            &lt;/person&gt;
-            &lt;person&gt;
-                &lt;first-name age="13"&gt;Jill&lt;/first-name&gt;
-                &lt;family-name&gt;Jones&lt;/family-name&gt;
-            &lt;/person&gt;
-            &lt;person&gt;
-                &lt;first-name age="23"&gt;John&lt;/first-name&gt;
-                &lt;family-name&gt;Wick&lt;/family-name&gt;
-            &lt;/person&gt;
-        &lt;/family&gt;</pre>
+&lt;?xml version="1.0"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="family.xsl"?&gt;
+&lt;family&gt;
+    &lt;person&gt;
+        &lt;first-name age="10"&gt;Fred&lt;/first-name&gt;
+        &lt;family-name&gt;Smith&lt;/family-name&gt;
+    &lt;/person&gt;
+    &lt;person&gt;
+        &lt;first-name age="13"&gt;Jill&lt;/first-name&gt;
+        &lt;family-name&gt;Jones&lt;/family-name&gt;
+    &lt;/person&gt;
+    &lt;person&gt;
+        &lt;first-name age="23"&gt;John&lt;/first-name&gt;
+        &lt;family-name&gt;Wick&lt;/family-name&gt;
+    &lt;/person&gt;
+&lt;/family&gt;</pre>
         </div>
 
         <div class="floatingHalfBox">
             <h3>XSLT File (family.xsl)</h3>
             <pre class="prettyprint linenums">
-        &lt;?xml version="1.0"?&gt;
-        &lt;xsl:stylesheet version="1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
-                 &lt;xsl:copy-of select=&quot;/person[@age lt; 18]&quot; /&gt;
-        &lt;/xsl:stylesheet&gt;
+&lt;?xml version="1.0"?&gt;
+&lt;xsl:stylesheet version="1.0"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+         &lt;xsl:copy-of select=&quot;/person[@age lt; 18]&quot; /&gt;
+&lt;/xsl:stylesheet&gt;
 
 
 
@@ -122,25 +122,25 @@
 
 
         </pre>
-        </div>
-
-        <div>
-            <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
         </div>
 
         <div class="floatingBox">
             <b>Processor output:</b>
             <pre class="prettyprint linenums">
-        &lt;?xml version="1.0" encoding="UTF-16"?&gt;
-            &lt;person&gt;
-                &lt;first-name age="10"&gt;Fred&lt;/first-name&gt;
-                &lt;family-name&gt;Smith&lt;/family-name&gt;
-            &lt;/person&gt;
-            &lt;person&gt;
-                &lt;first-name age="13"&gt;Jill&lt;/first-name&gt;
-                &lt;family-name&gt;Jones&lt;/family-name&gt;
-            &lt;/person&gt;
-        </pre>
+&lt;?xml version="1.0" encoding="UTF-16"?&gt;
+    &lt;person&gt;
+        &lt;first-name age="10"&gt;Fred&lt;/first-name&gt;
+        &lt;family-name&gt;Smith&lt;/family-name&gt;
+    &lt;/person&gt;
+    &lt;person&gt;
+        &lt;first-name age="13"&gt;Jill&lt;/first-name&gt;
+        &lt;family-name&gt;Jones&lt;/family-name&gt;
+    &lt;/person&gt;
+</pre>
+        </div>
+
+        <div>
+            <a target="_blank" href="${pageContext.request.contextPath}/examples/transformer" class="myButton">Try it yourself</a>
         </div>
     </div>
 </body>

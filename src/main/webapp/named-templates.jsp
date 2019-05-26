@@ -114,10 +114,6 @@
             </pre>
             </div>
 
-            <div>
-                <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
-            </div>
-
             <div class="floatingHalfBox">
                 <h3>Output</h3>
                 <pre class="prettyprint linenums">
@@ -146,6 +142,10 @@
         &lt;/table&gt;
 &lt;/html&gt;
                 </pre>
+
+                <div>
+                    <a target="_blank" href="${pageContext.request.contextPath}/examples/transformer" class="myButton">Try it yourself</a>
+                </div>
             </div>
             <div class="floatingHalfBox">
                 <h3>Preview</h3>

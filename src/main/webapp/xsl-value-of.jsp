@@ -130,19 +130,15 @@
 &lt;xsl:stylesheet version="1.0"
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
 
-&lt;xsl:template match="person"&gt;
-    &lt;p&gt;
-        &lt;xsl:value-of select="first-name"/&gt;
-        &lt;xsl:text&gt; &lt;/xsl:text&gt;
-        &lt;xsl:value-of select="family-name"/&gt;
-    &lt;/p&gt;
-&lt;/xsl:template&gt;
+    &lt;xsl:template match="person"&gt;
+        &lt;p&gt;
+            &lt;xsl:value-of select="first-name"/&gt;
+            &lt;xsl:text&gt; &lt;/xsl:text&gt;
+            &lt;xsl:value-of select="family-name"/&gt;
+        &lt;/p&gt;
+    &lt;/xsl:template&gt;
 
 &lt;/xsl:stylesheet&gt;</pre>
-        </div>
-
-        <div>
-            <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
         </div>
 
         <div class="floatingBox">
@@ -156,6 +152,10 @@
 &lt;?xml version="1.0" encoding="UTF-16"?&gt;
     &lt;p&gt;Fred Smith&lt;/p&gt;
     &lt;p&gt;Jill Jones&lt;/p&gt;</pre>
+        </div>
+
+        <div>
+            <a target="_blank" href="${pageContext.request.contextPath}/examples/transformer" class="myButton">Try it yourself</a>
         </div>
     </div>
 </body>

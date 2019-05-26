@@ -11,19 +11,21 @@
 </head>
 
 <body>
-<div id="navbar">
-    <a href="/xslt_examples" class="active">Home</a>
-    <a href="priority-of-templates.jsp">Priority of templates</a>
-    <a href="named-templates.jsp">Named templates</a>
-    <a href="xsl-if.jsp">XSLT &lt;if&gt;</a>
-    <a href="xsl-for-each.jsp">XSLT &lt;for-each&gt;</a>
-    <a href="xsl-value-of.jsp">XSLT &lt;value-of&gt;</a>
-    <a href="xsl-number.jsp">XSLT &lt;number&gt;</a>
-    <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
-    <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
-    <a href="literal-elements.jsp">Literal elements</a>
-    <a href="processing-mode.jsp" style="background-color: #ddd; color: black;">Processing mode</a>
-</div>
+    <div id="navbar">
+        <a href="${pageContext.request.contextPath}/examples/" class="active">Home</a>
+        <a href="${pageContext.request.contextPath}/examples/application-of-templates">Application of templates</a>
+        <a href="${pageContext.request.contextPath}/examples/priority-of-templates">Priority of templates</a>
+        <a href="${pageContext.request.contextPath}/examples/named-templates">Named templates</a>
+        <a href="${pageContext.request.contextPath}/examples/literal-elements">Literal elements</a>
+        <a href="${pageContext.request.contextPath}/examples/processing-mode" style="background-color: #ddd; color: black;">Processing mode</a>
+        <a href="${pageContext.request.contextPath}/examples/xsl-if">&lt;if&gt;</a>
+        <a href="${pageContext.request.contextPath}/examples/xsl-for-each">&lt;for-each&gt;</a>
+        <a href="${pageContext.request.contextPath}/examples/xsl-value-of">&lt;value-of&gt;</a>
+        <a href="${pageContext.request.contextPath}/examples/xsl-number">&lt;number&gt;</a>
+        <a href="${pageContext.request.contextPath}/examples/xsl-choose">&lt;choose&gt;</a>
+        <a href="${pageContext.request.contextPath}/examples/xsl-copy">&lt;copy-of&gt;</a>
+        <a href="${pageContext.request.contextPath}/examples/transformer">Transformation</a>
+    </div>
 
 <div class="content">
     <h1>Processing Mode</h1>

@@ -25,11 +25,17 @@ public class ExamplesServlet extends HttpServlet {
             case "/application-of-templates":
                 JSP = "/application-of-templates.jsp";
                 break;
+            case "/literal-elements":
+                JSP = "/literal-elements.jsp";
+                break;
             case "/named-templates":
                 JSP = "/named-templates.jsp";
                 break;
             case "/priority-of-templates":
                 JSP = "/priority-of-templates.jsp";
+                break;
+            case "/processing-mode":
+                JSP = "/processing-mode.jsp";
                 break;
             case "/transformer":
                 JSP = "/transformer.jsp";

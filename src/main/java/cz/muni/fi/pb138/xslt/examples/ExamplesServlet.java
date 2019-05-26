@@ -93,7 +93,9 @@ public class ExamplesServlet extends HttpServlet {
         Source xsltSource = new StreamSource(new StringReader(xslt));
         System.out.println("SOURCES INITIALIZED");
         TransformerFactory factory = TransformerFactory.newInstance();
+        factory.setAttribute("indent-number", 2);
         Transformer transformer = factory.newTransformer(xsltSource);
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
         System.out.println("TRANSFORMER CREATED");
         StringWriter stringWriter = new StringWriter();
         transformer.transform(xmlSource, new StreamResult(stringWriter));

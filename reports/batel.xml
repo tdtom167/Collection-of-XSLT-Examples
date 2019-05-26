@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article id="report" xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <chapter>
+        <title>Applications of templates</title>
+        <para>I crated a simple web page with example of <code>&lt;&gt;</code> </para>
+    </chapter>
+</article>

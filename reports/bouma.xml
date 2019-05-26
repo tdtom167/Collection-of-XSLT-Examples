@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD Simplified DocBook XML V1.0//EN"
+"http://www.oasis-open.org/docbook/xml/simple/1.0/sdocbook.dtd">
+<article>
+  <title>Contribution of Tomas Bouma</title>
+  <articleinfo>
+    <author>
+      <firstname>Tomas</firstname>
+      <surname>Bouma</surname>
+    </author>
+    <date>May 24, 2019</date>
+  </articleinfo>
+  <chapter>
+    <title>Self-evalution of Tomas Bouma</title>
+    <para>
+		I would consider my self as a active contributor of this project. Main steps I took you can in list below.
+		For futher details please take a look at a github commit history.
+    </para>
+  </chapter>
+    <chapter>
+	<title>Creation of github repo</title>
+	<para>
+				Creation of a GitHub repository, setting it to private and adding all necessary students and professors.
+			</para>
+		</chapter>
+		<chapter>
+			<title>Readme.md Creation</title>
+			<para>
+				Wrote Readme.md page for GitHub where I Explained what 
+				the project will look like what technologies will be used
+				which examples will be included and who are the authors. 
+			</para>
+		</chapter>
+		<chapter>
+			<title>.gitignore</title>
+			<para>
+				Added .gitignore file which was very helpful for avoiding GitHub commits
+			</para>
+		</chapter>
+		<chapter>
+			<title>XSLT:Number</title>
+			<para>
+				Created Page for XSLT: Number where I Explained for what the element is how it can be helpful for us and 
+				all the attributes it can have. Also, I included Example with XML file XSLT file, try-it-yourself option, output, and processor output.
+			</para>
+		</chapter>
+		<chapter>
+			<title>XSLT:Choose</title>
+			<para>
+				Created Page for XSLT: Chose where i Explained for what the element is how it can be helpful for us and all the attributes 
+				it can have. Also, I included Example with XML file XSLT file, try-it-yourself option, output, and processor output.
+				Here I encountered some difficulties in how to properly explain the element so it i,s understandable for everyone.
+				In the end i think i did quite well.
+			</para>
+		</chapter>
+		<chapter>
+			<title>XSLT:Copy</title>
+			<para>
+				Created Page for XSLT: copy where I Explained for what the element is how it can be helpful for us and all the
+				attributes it can have. Also, I included Example with XML file XSLT file, try-it-yourself option, output,
+				and processor output. Here I encountered problems by myself with properly understanding the element but in the end,
+				I think I figured it out well.
+			</para>
+		</chapter>
+		<chapter>
+			<title>Font update</title>
+			<para>Updated font of the whole page to Kodchasan so it looks professional and appealing for coders eyes.</para>
+		</chapter>
+		<chapter>
+			<title>Index page</title>
+			<para>IN the end, I Created the index page where I showed the Main advantages of XSLT and why everyone should know it. Tehcnologies that use the XSLT. Authors of the project and link to the github repo
+			</para>
+		</chapter>
+</article>

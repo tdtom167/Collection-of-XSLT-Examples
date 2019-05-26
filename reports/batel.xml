@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article id="report" xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <articleinfo>
+        <author>
+            <firstname>Jakub</firstname>
+            <surname>Bateľ</surname>
+        </author>
+        <date>26.5.2019</date>
+    </articleinfo>
+    <title>Report of my work on Collection of XSLT Examples</title>
     <chapter>
         <title>Applications of templates</title>
-        <para>I crated a simple web page with example of <code>&lt;&gt;</code> </para>
+        <para>I made a simple web page with example of <code>&lt;xsl:apply-templates/&gt;</code>. I created XML file used as
+            a base of transformation. Then I started working on XSLT file. In this XSLT file is shown how application
+            of templates works. Then I used xsltproc to do actual transformation. I copy-pasted the output of xslt
+            processor to the .jsp file. At the beginning of the web page I wrote some basic information about the tag
+            itself. At the end of the page is shown the result as HTML file and also how this HTML looks in web browser.
+            There is also a short description what happened during the transformation.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Priority of templates</title>
+        <para>
+            I was working on web page which shows how are the templates prioritized. I did not know how this works
+            exactly so I started with learning about it. Then I tried to explain as simply as possible. I described how
+            <code>priority</code> attribute is used, what its default value and so on. Then I created simple example
+            with 3 people and matching few templates. At the end I added short description about why the exact template
+            matched the exact person.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Named templates</title>
+        <para>
+            At this part of the project I was focusing on how <code>&lt;xsl:call-template&gt;</code> works, also calling
+            template with arguments. This is done with <code>&lt;xsl:with-param&gt;</code>. I created a simple example
+            where you can see how it all works together. I had some problems while I was trying to call template with
+            parameters but after all I figured it out. It was not a big deal. At the end of the example as usual you can
+            see how this data looks in text form and because it is HTML it also showing how are this data shown by browser.
+        </para>
+    </chapter>
+    <chapter>
+        <title>XSLT Live processor</title>
+        <para>
+            To make our web application more interesting we decided to create a section where you can try this transformations
+            by yourself. It provides two text areas where you can insert your XML and XSLT file, then hit the convert button
+            and you will see the result directly on the page. This whole thing is accomplished using Java standard library,
+            which provides the XSLT Transformer with combination of HttpServlet. It was pretty much easy task to do, because
+            everything was pre-prepared and I just used it in a right way.
+        </para>
     </chapter>
 </article>

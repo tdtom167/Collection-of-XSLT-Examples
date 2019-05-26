@@ -100,6 +100,14 @@ strong {
     color: #222;
 }
 
+.browserDisplay tr td {
+    color: #222;
+}
+
+.browserDisplay tr th {
+    color: #222;
+}
+
 a {
     color: rgb(72, 134, 248);
 }

@@ -19,6 +19,8 @@
             <a href="xsl-number.jsp">XSLT &lt;number&gt;</a>
             <a href="xsl-choose.jsp">XSLT &lt;choose&gt;</a>
             <a href="xsl-copy.jsp">XSLT &lt;copy-of&gt;</a>
+            <a href="literal-elements.jsp">Literal elements</a>
+            <a href="processing-mode.jsp">Processing mode</a>
             <a href="transformer.jsp">Transform</a>
         </div>
 
@@ -50,6 +52,12 @@
                 </li>
                 <li>
                     <a href="xsl-copy.jsp">xsl:copy-of</a><br/>
+                </li>
+                <li>
+                    <a href="literal-elements.jsp">Literal elements</a><br/>
+                </li>
+                <li>
+                    <a href="processing-mode.jsp">Processing mode</a><br/>
                 </li>
             </ul>
         </div>

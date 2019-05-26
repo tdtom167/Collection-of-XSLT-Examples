@@ -41,7 +41,7 @@
 
         <hr>
         <h2>Example</h2>
-        <div style="max-width: 60%;">
+        <div>
             The XSLT file in this example defines the structure of an output document. The output is a top-level HTML
             element containing <code>&lt;body&gt;</code> and <code>&lt;table&gt;</code> elements. The table contains repeated
             rows for each customer. The XSLT file also uses templates to create <code>&lt;td&gt;</code> elements for the name,

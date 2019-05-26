@@ -34,7 +34,7 @@
                 Using <strong>match</strong> you can select which children will be selected. You can also specify <strong>mode</strong> which will affect which template will be used.
                 Applying templates also depends on <a href="${pageContext.request.contextPath}/examples/priority-of-templates">priority of templates</a>. Templates can also have names and being called, see <a href="${pageContext.request.contextPath}/examples/named-templates">named teplates</a>.
             </p>
-            <div class="fileHalfScreen">
+            <div class="floatingHalfBox">
                 <h3>XML File</h3>
                 <pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -61,7 +61,7 @@
 &lt;/vehicles&gt;
             </pre>
             </div>
-            <div class="fileHalfScreen">
+            <div class="floatingHalfBox">
                 <h3>XSLT File</h3>
                 <pre class="prettyprint linenums">
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -124,7 +124,7 @@
             <a target="_blank" href="transformer.jsp" class="myButton">Try it yourself</a>
         </div>
 
-        <div class="fileHalfScreen">
+        <div class="floatingHalfBox">
                 <h3>Output</h3>
                 <pre class="prettyprint linenums">
 &lt;html&gt;
@@ -168,7 +168,7 @@
 &lt;/html&gt;
                 </pre>
             </div>
-            <div class="fileHalfScreen">
+            <div class="floatingHalfBox">
                 <h3>Preview</h3>
                 <p>This is how result html looks like displayed by browser.</p>
                 <div class="browserDisplay">

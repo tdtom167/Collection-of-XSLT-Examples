@@ -45,7 +45,7 @@
                 formats (like transforming XML into HTML).
             </p>
 
-            <h3> What can you find on this website?  </h3>
+            <h3> What can you find on this website? </h3>
 
             <p>
                 This website with try it yourself examples will serve as a very good basis for learning, understanding XSLT

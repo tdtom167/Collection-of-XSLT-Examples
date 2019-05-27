@@ -98,7 +98,7 @@
             &lt;xsl:value-of select="family-name"/&gt;
                 &lt;p&gt;
                      &lt;xsl:choose&gt;
-                            &lt;xsl:when test="age &amp;lt; 18"&gt;
+                            &lt;xsl:when test="family-name/@age &amp;lt; 18"&gt;
                                 child
                             &lt;/xsl:when&gt;
                         &lt;xsl:otherwise&gt;

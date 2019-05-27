@@ -187,7 +187,7 @@
             <pre class="prettyprint linenums">
 &lt;?xml version="1.0"?&gt;
 &lt;?xml-stylesheet type="text/xsl" href="foreach.xsl" ?&gt;
-&lt;customers>&lt;
+&lt;customers&gt;
     &lt;customer&gt;
         &lt;name>John Smith&lt;/name&gt;
         &lt;address>123 Oak St.&lt;/address&gt;

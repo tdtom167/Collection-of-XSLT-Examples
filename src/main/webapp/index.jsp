@@ -28,12 +28,15 @@
             <div align="center">
                 <h1>Collection of XSLT Examples</h1>
             </div>
+            <br/>
+
             <h3>What is XSLT?</h3>
             <p>
                 XSL (eXtensible Stylesheet Language) is a styling language for XML.
                 XSLT stands for XSL Transformations and is used to transform XML documents into another format
                 such as HTML.
             </p>
+            <br/>
 
             <h3>Why do you need to learn XSLT? </h3>
 
@@ -44,6 +47,7 @@
                 in markup languages. These examples will teach you how to use XSLT to transform XML documents into other
                 formats (like transforming XML into HTML).
             </p>
+            <br/>
 
             <h3> What can you find on this website? </h3>
 
@@ -51,15 +55,22 @@
                 This website with try it yourself examples will serve as a very good basis for learning, understanding XSLT
                 and will be your best friend anytime you need a quick reminder of an XSLT syntax.
             </p>
+            <br/>
 
             <h3>What technologies did we use?</h3>
             <p>
-            The website was developed using java servlet, jsp pages and can be run on localhost TomCat Server after cloning the repository from GitHub.
-            It was created as a part of a school group project for Masaryk University, Faculty of Informatics, Subject: PB138 Modern markup languages.
-
+                The website was developed using java servlet, jsp pages and can be run on localhost TomCat Server after cloning the repository from GitHub.
+                It was created as a part of a school group project for Masaryk University, Faculty of Informatics, Subject: PB138 Modern markup languages.
             </p>
-            Don't wait any more and jump straight to it.
+
+            <p>
+                Don't wait any more and jump straight to it.
+            </p>
+            <br/>
+
             <hr>
+            <br/>
+
             Authors: Branislav Smolíček, Tomáš Bouma,  Jakub Bateľ, Marek Pavel Viskup.
         </div>
     </body>

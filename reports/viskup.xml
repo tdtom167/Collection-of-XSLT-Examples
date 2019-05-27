@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article id="report" xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <title>Report of my work on project Collection of XSLT Examples</title>
+    <articleinfo>
+        <author>
+            <firstname>Marek Pavel</firstname>
+            <surname>Viskup</surname>
+        </author>
+        <date>May 26, 2019</date>
+    </articleinfo>
+    <chapter>
+        <title>My assignment</title>
+        <para>I was assigned to create two web pages with XSLT examples:</para>
+        <itemizedlist>
+            <listitem>Construction of elements using literal elements</listitem>
+            <listitem>Processing mode</listitem>
+        </itemizedlist>
+    </chapter>
+    <chapter>
+        <title>Construction of elements using literal elements</title>
+        <para>
+            I created a web page which defines what literal element is and how it is copied to the output.
+            Then I showed an example with two input files (XML file and XSLT file) and displayed output and processor output.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Processing mode</title>
+        <para>
+            I created a web page about processing mode. I included detailed definition of operations of XSLT processor.
+            I also focused on <code>&lt;xsl:processing-instruction&gt;</code> element which I defined and showed syntax and its
+            attributes. Then I showed an example with XSLT code and the tag it creates.
+        </para>
+    </chapter>
+    <chapter>
+        <title>Try button update</title>
+        <para>
+            Finally I updated all pages in the project with "Try it yourself" button so that XSLT Live processor can be used
+            as a help to understand the transformation and all examples mentioned.
+        </para>
+    </chapter>
+</article>

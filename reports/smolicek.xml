@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article id="report" xmlns="http://docbook.org/ns/docbook" version="5.0">
+    <title>Contribution on the project Collection of XSLT Examples</title>
+    <articleinfo>
+        <author>
+            <firstname>Branislav</firstname>
+            <surname>Smolíček</surname>
+        </author>
+        <date>May 25, 2019</date>
+    </articleinfo>
+
+    <section>
+        <title>What did I work on?</title>
+        <para>My task was to create three jsp sites with examples of transformations.</para>
+        <itemizedlist>
+            <listitem>XSLT &lt;if&gt;</listitem>
+            <listitem>XSLT &lt;for-each&gt;</listitem>
+            <listitem>XSLT &lt;value-of&gt;</listitem>
+        </itemizedlist>
+        <para>I also created the floating navbar with all of the subdomains of our web-app. It changes colors of
+            currently open site in the navbar. There were some problems with the alignment but in the end everything
+            works perfectly.</para>
+        <para>I designed the example pages, transformation page and created stylesheet for the whole web-app. It contains
+            mainly styling of the tables, horizontal lines, highlighting of the code in the text and boxes for displaying the code.</para>
+        <para>Last, but not least I helped with redirecting of the pages.</para>
+    </section>
+
+    <section>
+        <title>XSLT &lt;if&gt;</title>
+        <para>Shows brief description, syntax and practical example of transformation.
+            Contains two input files (XML and XSLT) and show output and processor output</para>
+    </section>
+
+    <section>
+        <title>XSLT &lt;for-each&gt;</title>
+        <para>Shows brief description, syntax, remarks and practical example of transformation.
+            Contains two input files (XML and XSLT) and show output and processor output</para>
+    </section>
+
+    <section>
+        <title>XSLT &lt;value-of&gt;</title>
+        <para>Shows brief description, syntax, usage table and practical example of transformation.
+            Contains two input files (XML and XSLT) and show output and processor output</para>
+    </section>
+</article>

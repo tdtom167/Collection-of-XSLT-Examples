@@ -100,8 +100,8 @@
         <h2>Example</h2>
         <p>
             The following XSLT file creates a <code class="light">&lt;p&gt;</code> element from a <code class="light">&lt;person&gt;</code>
-            element with <code class="light">&lt;given-name&gt;</code> and <code class="light">&lt;family-name&gt;</code> child elements.
-            The <code class="light">&lt;p&gt;</code> element will contain the string value of the first <code class="light">&lt;given-name&gt;</code>
+            element with <code class="light">&lt;first-name&gt;</code> and <code class="light">&lt;family-name&gt;</code> child elements.
+            The <code class="light">&lt;p&gt;</code> element will contain the string value of the first <code class="light">&lt;first-name&gt;</code>
             child element of the current node, followed by a space and the string value of the first <code class="light">&lt;family-name&gt;</code>
             child element of the current node.
         </p>
